@@ -14,6 +14,12 @@ function App() {
   const increaseF = ()=>{
     dispatch({type:"INCREMENT",payload:{num:5}})
   }
+  const decrease=()=>{
+    dispatch({type:"DECREMENT",payload:{num:1}})
+  }
+  const decreaseF=()=>{
+    dispatch({type:"DECREMENT",payload:{num:5}})
+  }
   const login = ()=>{
     dispatch({type:"LOGIN",payload:{id:"aaa",password:"111"}})
   }
@@ -25,6 +31,8 @@ function App() {
       <Box/>
       <button onClick={increase}>증가</button>
       <button onClick={increaseF}>증가5+</button>
+      <button onClick={decrease}>감소</button>
+      <button onClick={decreaseF}>감소5-</button>
       <button onClick={login}>login</button>
     </div>
   );

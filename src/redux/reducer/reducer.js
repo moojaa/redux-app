@@ -9,6 +9,9 @@ function reducer(state = initialState, action) {
     if (action.type === "INCREMENT") {
         return { ...state, count: state.count + action.payload.num }
     }
+    if(action.type ==="DECREMENT"){
+        return{...state, count: state.count = action.payload.num}
+    }
     if (action.type === "LOGIN") {
         return {
             ...state,
