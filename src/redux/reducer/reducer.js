@@ -10,7 +10,7 @@ function reducer(state = initialState, action) {
         return { ...state, count: state.count + action.payload.num }
     }
     if(action.type ==="DECREMENT"){
-        return{...state, count: state.count = action.payload.num}
+        return{...state, count: state.count - action.payload.num}
     }
     if (action.type === "LOGIN") {
         return {

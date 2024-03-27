@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <h1>{`id:${id} password:${password}`}</h1>
+      <h1>{`id:${id? id :""} password:${password? password:""}`}</h1>
       <h1>{count}</h1>
       <Box/>
       <button onClick={increase}>증가</button>
